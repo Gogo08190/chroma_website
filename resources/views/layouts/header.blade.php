@@ -1,15 +1,16 @@
 <header id="page-header">
   <div id="prenav" class="uk-visible@m">
     <div class="uk-container">
-      <div class="uk-align-right uk-navbar-right wow bounceInDown">
+      <div class="uk-align-right uk-navbar-right">
         <ul>
             <li class="social"><a href="{!! get_option('th_youtube') !!}" target="_blank" class="social_icon youtube"><i class="fab fa-youtube"></i></a></li>
             <li class="social"><a href="{!! get_option('th_twitch') !!}" target="_blank" class="social_icon twitch"><i class="fab fa-twitch"></i></a></li>
             <li class="social"><a href="{!! get_option('th_discord') !!}" target="_blank" class="social_icon discord"><i class="fab fa-discord"></i></a></li>
-            <li class="social"><a href="{!! get_option('th_twitter') !!}" target="_blank" class="social_icon twitter"><i class="fab fa-twitter"></i></a></li>
-            <li class="social"><a href="{!! get_option('th_instagram') !!}" target="_blank" class="social_icon instagram"><i class="fab fa-instagram"></i></a></li>
             <li class="social"><a href="{!! get_option('th_github') !!}" target="_blank" class="social_icon github"><i class="fab fa-github"></i></a></li>
         </ul>
+      </div>
+      <div class="uk-align-left uk-navbar-left">
+        {{ wp_nav_menu(['theme_location' => 'nav-lang', 'container'=> false, 'menu_class'=> false, 'menu_id' => 'menu-lang']) }}
       </div>
     </div>
   </div>

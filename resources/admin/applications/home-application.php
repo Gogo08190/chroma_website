@@ -36,7 +36,7 @@ function custom_page_home() {
 
 Metabox::make('page_home', 'page')
 	->add(new Section('top', 'Haut de la page', [
-	    Field::textarea('titre', ['label' => 'Titre']),
+	    Field::collection('slider', ['label' => 'Slider']),
 	]))
 
 	->add(new Section('la_team', 'Team', [

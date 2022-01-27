@@ -9,6 +9,7 @@
 		@head
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://kit.fontawesome.com/791da63d6e.js" crossorigin="anonymous"></script>
 		@yield('javascriptheader')
 	</head>
 
@@ -25,7 +26,16 @@
 			@include('layouts.footer')
 		</div>
 
+		<div id="menu-mobile" data-uk-offcanvas="mode: push">
+	    <div class="uk-offcanvas-bar">
+	      <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+				{!! wp_nav_menu(['theme_location' => 'nav-mobile', 'container' => false, 'menu_id' => 'mobile-nav']) !!}
+	    </div>
+	  </div>
+
 		@footer
 		@yield('javascript')
+
+		<script src="https://unpkg.com/mailgo@0.12.2/dist/mailgo.min.js"></script>
 	</body>
 </html>

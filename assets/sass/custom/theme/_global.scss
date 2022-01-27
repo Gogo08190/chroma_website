@@ -14,12 +14,12 @@ html, body {
   background-color: $dark;
 
   ::selection {
-    background: $light_blue;
+    background: $turquoise;
     color: white;
   }
 
   ::-moz-selection {
-    background: $light_blue;
+    background: $turquoise;
     color: white;
   }
 }
@@ -35,12 +35,12 @@ html, body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: $blue;
+    background: $turquoise;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: $light_blue;
+	background: $dark_turquoise;
 }
 
 body {
