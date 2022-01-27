@@ -22,7 +22,7 @@
                 <a class="uk-navbar-toggle uk-hidden@m uk-navbar-toggle-icon uk-icon" href="#menu-mobile" data-uk-navbar-toggle-icon data-uk-toggle></a>
 
                 <a class="uk-navbar-item uk-visible@m uk-logo" href="{{ get_home_url() }}">
-                  <img src="{{ get_template_directory_uri() }}/dist/images/logos/logo.svg" alt="{{ bloginfo('name') }}">
+                  <img src="{{ get_template_directory_uri() }}/dist/images/logos/logo.png" alt="{{ bloginfo('name') }}">
                 </a>
               </div>
               <div class="uk-navbar-right uk-visible@m">
@@ -32,7 +32,7 @@
               </div>
               <div class="uk-navbar-center">
                 <a class="uk-navbar-item uk-hidden@m uk-logo" href="{{ get_home_url() }}">
-                  <img src="{{ get_template_directory_uri() }}/dist/images/logos/logo.svg" alt="{{ bloginfo('name') }}">
+                  <img src="{{ get_template_directory_uri() }}/dist/images/logos/logo.png" alt="{{ bloginfo('name') }}">
                 </a>
               </div>
           </nav>
