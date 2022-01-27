@@ -2,14 +2,49 @@
 ================================================ */
 
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
   color: black;
+  scroll-behavior: smooth;
+  height: 100%;
+  background-color: $dark;
+
+  ::selection {
+    background: $light_blue;
+    color: white;
+  }
+
+  ::-moz-selection {
+    background: $light_blue;
+    color: white;
+  }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: $light_blue;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a:focus {
