@@ -36,6 +36,7 @@ function custom_page_home() {
 
 Metabox::make('page_home', 'page')
 	->add(new Section('top', 'Haut de la page', [
+			Field::textarea('titre', ['label' => 'Titre']),
 	    Field::collection('slider', ['label' => 'Slider']),
 	]))
 
@@ -43,8 +44,17 @@ Metabox::make('page_home', 'page')
 	    Field::textarea('titre_team', ['label' => 'Titre']),
 	]))
 
+	->add(new Section('les_modpacks', 'Modpacks', [
+	    Field::textarea('titre_modpack', ['label' => 'Titre']),
+	]))
+
 	->add(new Section('partner', 'Partenaires', [
 	    Field::textarea('titre_partenaire', ['label' => 'Titre']),
+	    Field::text('nom_partenaire', ['label' => 'Nom']),
+	    Field::textarea('desc_partenaire', ['label' => 'Description']),
+	    Field::media('logo_partenaire', ['label' => 'Logo']),
+	    Field::text('link_partenaire', ['label' => 'Lien']),
+	    Field::text('btn_partenaire', ['label' => 'Bouton']),
 	]))
 	->setTemplate('home')
 	->setTitle('Contenu de la page')

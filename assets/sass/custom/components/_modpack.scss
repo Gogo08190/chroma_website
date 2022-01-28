@@ -1,0 +1,26 @@
+/* Liste Modpack
+================================================ */
+
+.pack {
+  >div {
+    img {
+      border: 4px solid $turquoise;
+    }
+
+    h3 {
+      margin-top: 10px;
+      @extend %texte;
+      font-family: 'Montserrat', sans-serif;
+      color: $turquoise;
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    .button {
+      padding: 2rem 0;
+      .uk-button {
+        @extend %button;
+      }
+    }
+  }
+}

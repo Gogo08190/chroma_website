@@ -4,5 +4,75 @@
 #wrapper.home {
   #slider {
     padding: 5rem 0;
+
+    .titre {
+      h1 {
+        @extend %title_h1;
+      }
+    }
+
+    .slider {
+      padding: 3rem 0;
+    }
+  }
+
+  #team {
+    padding: 5rem 0;
+
+    .titre {
+      padding: 2rem 0;
+      h2 {
+        @extend %title_h1;
+      }
+    }
+  }
+
+  #modpack {
+    padding: 5rem 0;
+
+    .titre {
+      padding: 2rem 0;
+      h2 {
+        @extend %title_h1;
+      }
+    }
+  }
+
+  #partner {
+    padding: 5rem 0;
+
+    .titre {
+      padding: 2rem 0;
+      h2 {
+        @extend %title_h1;
+      }
+    }
+
+    .partenaires_slider {
+
+      h3 {
+        margin-top: 10px;
+        @extend %texte;
+        font-family: 'Montserrat', sans-serif;
+        color: $turquoise;
+        font-size: 3rem;
+      }
+
+      p {
+        @extend %texte;
+        padding-top: 2rem;
+
+        strong {
+          color: $turquoise;
+        }
+      }
+
+      .button {
+        padding: 2rem 0;
+        .uk-button {
+          @extend %button;
+        }
+      }
+    }
   }
 }
