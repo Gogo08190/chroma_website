@@ -10,4 +10,5 @@
  */
 return [
   'home' => [__('Accueil', THEME_TD), ['page']],
+  'error' => [__('404', THEME_TD), ['page']],
 ];

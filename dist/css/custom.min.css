@@ -13,6 +13,7 @@
 .list-team .team > div p,
 .list-team .team > div h3,
 #page-footer #copyright p,
+#error p,
 #histoire .content p,
 #islands .ile > div h3,
 #modpack .list_modpacks > div p,
@@ -24,6 +25,7 @@
   color: white;
 }
 
+#error h2,
 #histoire .titre h3,
 #islands .titre h3,
 #modpack .list_modpacks > div h1,
@@ -94,6 +96,63 @@
 #wrapper.home #partner .partenaires_slider .button .uk-button:focus i {
   opacity: 1;
   left: 0;
+}
+
+@-webkit-keyframes souligne {
+  0% {
+    transform: scaleX(0);
+  }
+
+  46% {
+    transform: scaleX(0);
+  }
+
+  54% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes souligne {
+  0% {
+    transform: scaleX(0);
+  }
+
+  46% {
+    transform: scaleX(0);
+  }
+
+  54% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+#error .souligne_turquoise {
+  position: relative;
+  padding: 2px;
+  display: inline-block;
+  line-height: 1.1;
+  z-index: 2;
+}
+
+#error .souligne_turquoise:after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 4px);
+  left: -2px;
+  top: 0;
+  z-index: -1;
+  animation: souligne 5s ease 0s infinite alternate-reverse none;
+  transform-origin: 0 0;
 }
 
 /* Global
@@ -434,6 +493,38 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 #histoire .content p b {
   color: #43D9BD;
+}
+
+/* Error
+================================================ */
+
+#error {
+  padding: 5rem;
+}
+
+#error h2 span {
+  position: relative;
+}
+
+#error h2 span::after {
+  display: block;
+  content: "";
+  background-color: #43D9BD;
+  height: 1rem;
+  width: 9rem;
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  z-index: 1;
+}
+
+#error p {
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+
+#error .souligne_turquoise:after {
+  background: #43D9BD;
 }
 
 /*  Page

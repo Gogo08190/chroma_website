@@ -1,0 +1,39 @@
+/* Error
+================================================ */
+
+#error {
+  padding: 5rem;
+
+  h2 {
+    @extend %title_h1 ;
+
+    span {
+      position: relative;
+
+      &::after {
+        display: block;
+        content: '';
+        background-color: $turquoise;
+        height: 1rem;
+        width: 9rem;
+        position: absolute;
+        right: 0;
+        bottom: -1rem;
+        z-index: 1;
+      }
+    }
+  }
+
+  p {
+    padding-top: 2rem;
+    @extend %texte;
+    font-size: 3rem;
+  }
+
+  .souligne_turquoise {
+    @extend %souligne;
+    &:after {
+        background: $turquoise;
+    }
+}
+}

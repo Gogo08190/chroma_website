@@ -10,3 +10,5 @@
 Route::get('template', ['home', 'uses' => 'HomeController@index']);
 Route::get('singular', ['islands', 'uses' => 'IslandController@index']);
 Route::get('singular', ['modpack', 'uses' => 'ModpackController@index']);
+
+Route::get('404', ['404', 'uses' => 'ErrorController@index']);
