@@ -1,53 +1,91 @@
-.list_modpacks {
-  padding-top: 5rem;
+#modpack {
+  padding: 5rem 0;
 
-  >div {
-    padding-top: 3rem;
+  .list_modpacks {
 
-    img {
-      border: 4px solid $turquoise;
-    }
+    >div {
+      padding-top: 3rem;
 
-    h1 {
-      @extend %title_h1;
-      font-size: 4rem;
-
-      span {
-        font-family: 'Fredoka One', cursive;
-        font-weight: normal;
-        color: $turquoise;
-        font-size: 3rem;
+      img {
+        border: 4px solid $turquoise;
       }
-    }
 
-    .categories {
-      >div {
-        margin-top: 20px;
+      h1 {
+        @extend %title_h1;
+        font-size: 4rem;
 
-        h3 {
-          @extend %texte;
-          font-size: 1.6rem;
-          padding: 1rem 0;
-          border: 2px solid $turquoise;
-          border-radius: 40px;
+        span {
+          font-family: 'Fredoka One', cursive;
+          font-weight: normal;
+          color: $turquoise;
+          font-size: 3rem;
+        }
+      }
+
+      .categories {
+        >div {
+          margin-top: 20px;
+
+          h3 {
+            @extend %texte;
+            font-size: 1.6rem;
+            padding: 1rem 0;
+            border: 2px solid $turquoise;
+            border-radius: 40px;
+          }
+        }
+      }
+
+      p {
+        padding-top: 1rem;
+        @extend %texte;
+        font-size: 1.6rem;
+
+        strong {
+          color: $turquoise;
+        }
+      }
+
+      .button {
+        padding-top: 1rem;
+        .uk-button {
+          @extend %button;
         }
       }
     }
+  }
+}
 
-    p {
-      padding-top: 1rem;
-      @extend %texte;
-      font-size: 1.6rem;
+#islands {
+  padding: 5rem 0;
 
-      strong {
-        color: $turquoise;
-      }
+  .titre {
+    h3 {
+      @extend %title_h1;
+      font-size: 4rem;
     }
+  }
 
-    .button {
-      padding-top: 1rem;
-      .uk-button {
-        @extend %button;
+  .ile {
+    >div {
+      img {
+        border: 4px solid $turquoise;
+      }
+
+      h3 {
+        margin-top: 10px;
+        @extend %texte;
+        font-family: 'Montserrat', sans-serif;
+        color: $turquoise;
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      .button {
+        padding: 2rem 0;
+        .uk-button {
+          @extend %button;
+        }
       }
     }
   }

@@ -29,6 +29,8 @@ class Modpack extends Model{
           $modpack[$id]['btn'] = get_post_meta($val->ID, 'th_btn', true);
           $modpack[$id]['plus'] = get_post_meta($val->ID, 'th_plus', true);
           $modpack[$id]['logo'] = get_post_meta($val->ID, 'th_logo', true);
+          $modpack[$id]['online'] = get_post_meta($val->ID, 'th_online', true);
+          $modpack[$id]['island_title'] = get_post_meta($val->ID, 'th_island_title', true);
         }
         return $modpack;
     }

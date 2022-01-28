@@ -13,8 +13,10 @@
 .list-team .team > div p,
 .list-team .team > div h3,
 #page-footer #copyright p,
-.list_modpacks > div p,
-.list_modpacks > div .categories > div h3,
+#histoire .content p,
+#islands .ile > div h3,
+#modpack .list_modpacks > div p,
+#modpack .list_modpacks > div .categories > div h3,
 #wrapper.home #partner .partenaires_slider p,
 #wrapper.home #partner .partenaires_slider h3 {
   font-family: "Roboto", sans-serif;
@@ -22,7 +24,9 @@
   color: white;
 }
 
-.list_modpacks > div h1,
+#histoire .titre h3,
+#islands .titre h3,
+#modpack .list_modpacks > div h1,
 #wrapper.home #partner .titre h2,
 #wrapper.home #modpack .titre h2,
 #wrapper.home #team .titre h2,
@@ -34,7 +38,8 @@
 }
 
 .pack > div .button .uk-button,
-.list_modpacks > div .button .uk-button,
+#islands .ile > div .button .uk-button,
+#modpack .list_modpacks > div .button .uk-button,
 #wrapper.home #partner .partenaires_slider .button .uk-button {
   color: white;
   font-size: 2rem;
@@ -55,7 +60,8 @@
 }
 
 .pack > div .button .uk-button i,
-.list_modpacks > div .button .uk-button i,
+#islands .ile > div .button .uk-button i,
+#modpack .list_modpacks > div .button .uk-button i,
 #wrapper.home #partner .partenaires_slider .button .uk-button i {
   position: relative;
   left: -10px;
@@ -66,10 +72,12 @@
 }
 
 .pack > div .button .uk-button:hover,
-.list_modpacks > div .button .uk-button:hover,
+#islands .ile > div .button .uk-button:hover,
+#modpack .list_modpacks > div .button .uk-button:hover,
 #wrapper.home #partner .partenaires_slider .button .uk-button:hover,
 .pack > div .button .uk-button:focus,
-.list_modpacks > div .button .uk-button:focus,
+#islands .ile > div .button .uk-button:focus,
+#modpack .list_modpacks > div .button .uk-button:focus,
 #wrapper.home #partner .partenaires_slider .button .uk-button:focus {
   background-position: left bottom;
   border: 2px solid #43D9BD;
@@ -77,10 +85,12 @@
 }
 
 .pack > div .button .uk-button:hover i,
-.list_modpacks > div .button .uk-button:hover i,
+#islands .ile > div .button .uk-button:hover i,
+#modpack .list_modpacks > div .button .uk-button:hover i,
 #wrapper.home #partner .partenaires_slider .button .uk-button:hover i,
 .pack > div .button .uk-button:focus i,
-.list_modpacks > div .button .uk-button:focus i,
+#islands .ile > div .button .uk-button:focus i,
+#modpack .list_modpacks > div .button .uk-button:focus i,
 #wrapper.home #partner .partenaires_slider .button .uk-button:focus i {
   opacity: 1;
   left: 0;
@@ -317,51 +327,113 @@ header#page-header #nav .uk-navbar-right a:hover {
   padding: 2rem 0;
 }
 
-.list_modpacks {
-  padding-top: 5rem;
+#modpack {
+  padding: 5rem 0;
 }
 
-.list_modpacks > div {
+#modpack .list_modpacks > div {
   padding-top: 3rem;
 }
 
-.list_modpacks > div img {
+#modpack .list_modpacks > div img {
   border: 4px solid #43D9BD;
 }
 
-.list_modpacks > div h1 {
+#modpack .list_modpacks > div h1 {
   font-size: 4rem;
 }
 
-.list_modpacks > div h1 span {
+#modpack .list_modpacks > div h1 span {
   font-family: "Fredoka One", cursive;
   font-weight: normal;
   color: #43D9BD;
   font-size: 3rem;
 }
 
-.list_modpacks > div .categories > div {
+#modpack .list_modpacks > div .categories > div {
   margin-top: 20px;
 }
 
-.list_modpacks > div .categories > div h3 {
+#modpack .list_modpacks > div .categories > div h3 {
   font-size: 1.6rem;
   padding: 1rem 0;
   border: 2px solid #43D9BD;
   border-radius: 40px;
 }
 
-.list_modpacks > div p {
+#modpack .list_modpacks > div p {
   padding-top: 1rem;
   font-size: 1.6rem;
 }
 
-.list_modpacks > div p strong {
+#modpack .list_modpacks > div p strong {
   color: #43D9BD;
 }
 
-.list_modpacks > div .button {
+#modpack .list_modpacks > div .button {
   padding-top: 1rem;
+}
+
+#islands {
+  padding: 5rem 0;
+}
+
+#islands .titre h3 {
+  font-size: 4rem;
+}
+
+#islands .ile > div img {
+  border: 4px solid #43D9BD;
+}
+
+#islands .ile > div h3 {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #43D9BD;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+#islands .ile > div .button {
+  padding: 2rem 0;
+}
+
+#islands {
+  padding: 5rem 0;
+}
+
+#islands .titre h3 {
+  font-size: 4rem;
+}
+
+#islands .titre h3 span {
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+  color: #43D9BD;
+  font-size: 3rem;
+}
+
+#islands .island_slider {
+  padding: 2rem 0;
+}
+
+#islands .island_slider .uk-dotnav * * {
+  border: 1px solid #43D9BD;
+  width: 15px;
+  height: 15px;
+}
+
+#islands .island_slider .uk-dotnav * *:focus,
+#islands .island_slider .uk-dotnav * *:hover {
+  background-color: #43D9BD;
+}
+
+#islands .island_slider .uk-dotnav .uk-active * {
+  background-color: #43D9BD;
+}
+
+#histoire .content p b {
+  color: #43D9BD;
 }
 
 /*  Page

@@ -1,0 +1,58 @@
+#islands {
+  padding: 5rem 0;
+
+  .titre {
+    h3 {
+      @extend %title_h1;
+      font-size: 4rem;
+
+      span {
+        font-family: 'Fredoka One', cursive;
+        font-weight: normal;
+        color: $turquoise;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .island_slider {
+    padding: 2rem 0;
+    .uk-dotnav {
+      * {
+        * {
+          border: 1px solid $turquoise;
+          width: 15px;
+          height: 15px;
+
+          &:focus,&:hover {
+            background-color: $turquoise;
+          }
+        }
+      }
+      .uk-active {
+        * {
+          background-color: $turquoise;
+        }
+      }
+    }
+  }
+}
+
+#histoire {
+
+  .titre {
+    h3 {
+      @extend %title_h1;
+    }
+  }
+
+  .content {
+    p {
+      @extend %texte;
+
+      b {
+        color: $turquoise;
+      }
+    }
+  }
+}
