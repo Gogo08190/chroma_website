@@ -8,3 +8,4 @@
  */
 
 Route::get('template', ['home', 'uses' => 'HomeController@index']);
+Route::get('singular', ['modpack', 'uses' => 'ModpackController@index']);

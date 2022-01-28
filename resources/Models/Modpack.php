@@ -19,14 +19,16 @@ class Modpack extends Model{
 
         $modpack = [];
         foreach ($posts->get_posts() as $key => $val) {
-          $modpack[$key]['title'] = get_the_title($val->ID);
-          $modpack[$key]['titre'] = get_post_meta($val->ID, 'th_titre', true);
-          $modpack[$key]['categorie'] = get_post_meta($val->ID, 'th_categorie');
-          $modpack[$key]['desc'] = get_post_meta($val->ID, 'th_desc', true);
-          $modpack[$key]['url'] = get_post_meta($val->ID, 'th_url', true);
-          $modpack[$key]['btn'] = get_post_meta($val->ID, 'th_btn', true);
-          $modpack[$key]['plus'] = get_post_meta($val->ID, 'th_plus', true);
-          $modpack[$key]['logo'] = get_post_meta($val->ID, 'th_logo', true);
+          $id = $val->ID;
+          $modpack[$id]['id'] = $val->ID;
+          $modpack[$id]['title'] = get_the_title($val->ID);
+          $modpack[$id]['titre'] = get_post_meta($val->ID, 'th_titre', true);
+          $modpack[$id]['categorie'] = get_post_meta($val->ID, 'th_categorie');
+          $modpack[$id]['desc'] = get_post_meta($val->ID, 'th_desc', true);
+          $modpack[$id]['url'] = get_post_meta($val->ID, 'th_url', true);
+          $modpack[$id]['btn'] = get_post_meta($val->ID, 'th_btn', true);
+          $modpack[$id]['plus'] = get_post_meta($val->ID, 'th_plus', true);
+          $modpack[$id]['logo'] = get_post_meta($val->ID, 'th_logo', true);
         }
         return $modpack;
     }
