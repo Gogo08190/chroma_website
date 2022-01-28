@@ -12,6 +12,7 @@
 .pack > div h3,
 .list-team .team > div p,
 .list-team .team > div h3,
+#page-footer #copyright p,
 #wrapper.home #partner .partenaires_slider p,
 #wrapper.home #partner .partenaires_slider h3 {
   font-family: "Roboto", sans-serif;
@@ -312,6 +313,28 @@ header#page-header #nav .uk-navbar-right a:hover {
 
 /*  Footer
 ================================================ */
+
+#page-footer {
+  margin-top: 5rem;
+}
+
+#page-footer #copyright {
+  padding: 1rem 0 1rem 0;
+  background-color: #2A3740;
+  border-top: 2px solid #43D9BD;
+}
+
+#page-footer #copyright p {
+  font-size: 1.5rem;
+  display: inline-block;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#page-footer #copyright p a {
+  color: #41D9AE;
+}
 
 /*  Responsive
     ================================================ */
