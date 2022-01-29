@@ -5,6 +5,12 @@
   #top_page {
     padding: 5rem 0;
 
+    .titre {
+      h1 {
+        @extend %title_h1;
+      }
+    }
+
     h4 {
       @extend %texte;
       font-size: 4rem;
