@@ -17,6 +17,16 @@
 		<script src="https://kit.fontawesome.com/791da63d6e.js" crossorigin="anonymous"></script>
 		@yield('javascriptheader')
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8DMTMW12YY"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-8DMTMW12YY');
+		</script>
+
 		<script>
 			window.axeptioSettings = {
 			  clientId: "61f5513a7d80bb22291661c5",
