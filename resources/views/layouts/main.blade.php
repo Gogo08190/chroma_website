@@ -16,6 +16,18 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://kit.fontawesome.com/791da63d6e.js" crossorigin="anonymous"></script>
 		@yield('javascriptheader')
+
+		<script>
+			window.axeptioSettings = {
+			  clientId: "61f5513a7d80bb22291661c5",
+			};
+
+			(function(d, s) {
+			  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+			  e.async = true; e.src = "//static.axept.io/sdk.js";
+			  t.parentNode.insertBefore(e, t);
+			})(document, "script");
+		</script>
 	</head>
 
 	<body>
