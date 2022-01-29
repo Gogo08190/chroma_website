@@ -1,2 +1,28 @@
-/*  Page
+/* Contact
 ================================================ */
+
+#wrapper.page {
+  #top_page {
+    padding: 5rem 0;
+
+    h4 {
+      @extend %texte;
+      font-size: 4rem;
+    }
+
+    p {
+      @extend %texte;
+
+      strong, a {
+        color: $turquoise;
+      }
+    }
+
+    .souligne_turquoise {
+      @extend %souligne;
+      &:after {
+          background: $turquoise;
+      }
+    }
+  }
+}
