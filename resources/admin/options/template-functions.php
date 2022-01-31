@@ -85,6 +85,11 @@ function admin_custom_footer() {
 	echo '<style>.themosis__metabox__footer button { display : none !important; }</style>';
 }
 
+function add_site_favicon() {
+  echo '<link rel="icon" type="image/png" sizes="32x32" href=" ' . get_template_directory_uri() . '/dist/images/favicon/favicon-32x32.png">';
+  echo '<link rel="icon" type="image/png" sizes="16x16" href=" ' . get_template_directory_uri() . '/dist/images/favicon/favicon-16x16.png">';
+}
+
 /**
  * Remove head and footer links
  */
