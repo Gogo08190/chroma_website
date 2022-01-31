@@ -90,6 +90,9 @@ function add_site_favicon() {
   echo '<link rel="icon" type="image/png" sizes="16x16" href=" ' . get_template_directory_uri() . '/dist/images/favicon/favicon-16x16.png">';
 }
 
+add_action('login_head', 'add_site_favicon');
+add_action('admin_head', 'add_site_favicon');
+
 /**
  * Remove head and footer links
  */
