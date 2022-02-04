@@ -93,14 +93,6 @@ header#page-header {
             margin: 2rem 0;
 
             > li {
-                &.current-menu-item {
-                    background-color: $turquoise;
-
-                    a {
-                      color: white;
-                    }
-                }
-
                 a {
                     padding: 1.5rem 3rem;
                     display: block;

@@ -310,14 +310,6 @@ header#page-header #nav .uk-navbar-right a:hover {
   margin: 2rem 0;
 }
 
-#menu-mobile .uk-offcanvas-bar #mobile-nav > li.current-menu-item {
-  background-color: #43D9BD;
-}
-
-#menu-mobile .uk-offcanvas-bar #mobile-nav > li.current-menu-item a {
-  color: white;
-}
-
 #menu-mobile .uk-offcanvas-bar #mobile-nav > li a {
   padding: 1.5rem 3rem;
   display: block;
