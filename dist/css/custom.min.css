@@ -568,6 +568,35 @@ header#page-header #nav .uk-navbar-right a:hover {
 /*  Responsive
     ================================================ */
 
+@media screen and (min-width: 1920px) {
+  #wrapper {
+    width: 100% !important;
+    transform: none !important;
+    transform-origin: center;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  html,
+  body {
+    font-size: 65%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  html,
+  body {
+    font-size: 40%;
+  }
+}
+
 /*  Components
 ================================================ */
 
