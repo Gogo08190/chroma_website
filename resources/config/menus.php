@@ -9,4 +9,5 @@
 return [
     'nav' => __('Navigation', THEME_TD),
     'nav-lang' => __('Navigation langues', THEME_TD),
+    'nav-mobile' => __('Navigation mobile', THEME_TD),
 ];
