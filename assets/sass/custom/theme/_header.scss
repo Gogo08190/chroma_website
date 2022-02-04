@@ -40,12 +40,6 @@ header#page-header {
 
               .menu-item {
                 position: relative;
-
-                  &.current-menu-item {
-                      a {
-                        color: $turquoise;
-                      }
-                  }
               }
           }
       }

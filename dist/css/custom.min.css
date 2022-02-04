@@ -269,10 +269,6 @@ header#page-header #nav .uk-navbar-item .menu .menu-item {
   position: relative;
 }
 
-header#page-header #nav .uk-navbar-item .menu .menu-item.current-menu-item a {
-  color: #43D9BD;
-}
-
 header#page-header #nav .uk-navbar-left .uk-navbar-toggle-icon {
   color: #43D9BD;
 }
