@@ -9,11 +9,11 @@
 		<div class="titre uk-container uk-text-center">
 			<h1>{!! $titre !!}</h1>
 		</div>
-		<div class="slider" data-uk-slideshow="animation: push; autoplay: true; min-height: 300; max-height: 600">
+		<div class="slider" data-uk-slideshow="animation: push; autoplay: true;">
 				<ul class="uk-slideshow-items">
 					@foreach($slider as $item)
 						<li>
-								<img src="{{ wp_get_attachment_image_src($item, 'full')[0] }}" alt="Chroma Team">
+								<img src="{{ wp_get_attachment_image_src($item, 'full')[0] }}" alt="Chroma Team" data-uk-cover>
 						</li>
 					@endforeach
 				</ul>
