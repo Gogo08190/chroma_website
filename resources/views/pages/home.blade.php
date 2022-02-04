@@ -9,7 +9,7 @@
 		<div class="titre uk-container uk-text-center">
 			<h1>{!! $titre !!}</h1>
 		</div>
-		<div class="slider" data-uk-slideshow="animation: push; autoplay: true;">
+		<div class="slider" data-uk-slideshow="animation: push; autoplay: true; max-height: 552;">
 				<ul class="uk-slideshow-items">
 					@foreach($slider as $item)
 						<li>
