@@ -25,7 +25,7 @@ PostType::make('modpack', 'Modpacks', 'Modpack')
   Metabox::make('mymodpack', 'modpack')
   ->add(new Section('modpack_info', 'Informations', [
     Field::textarea('titre', ['label' => 'Version']),
-    Field::choice('categorie', ['label' => 'Catégorie', 'choices' => ['Technologie', 'Exploration', 'Magie', 'Aventure & RPG', 'Mini-Jeux', 'Skyblock', 'Science Fiction', 'Quêtes'], 'multiple' => true]),
+    Field::choice('categorie', ['label' => 'Catégorie', 'choices' => ['Technologie', 'Exploration', 'Magie', 'Aventure & RPG', 'Mini-Jeux', 'Skyblock', 'Science Fiction', 'Quêtes', 'Technology', 'Magic', 'Minigames', 'Quests'], 'multiple' => true]),
     Field::textarea('desc', ['label' => 'Description']),
     Field::text('url', ['label' => 'URL']),
     Field::text('btn', ['label' => 'Bouton']),
