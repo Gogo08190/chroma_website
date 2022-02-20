@@ -230,6 +230,18 @@ a:focus {
   height: 100%;
 }
 
+#axeptio_overlay #axeptio_btn_acceptAll,
+#axeptio_overlay #axeptio_btn_acceptAllAndNext,
+#axeptio_overlay #axeptio_btn_next {
+  color: #43D9BD !important;
+  font-weight: 500 !important;
+}
+
+#axeptio_overlay [class^=AxeptioButton__] [class^=AxeptioIcon__] [class^=Icon__IconStyle-sc] {
+  width: 37px;
+  height: 37px;
+}
+
 /* Header
 ================================================ */
 
