@@ -36,6 +36,22 @@
         }
       }
 
+      .countdown {
+        padding: 2rem 0;
+        .uk-countdown-number {
+          @extend %title_h1;
+          font-size: 4rem;
+          color: $turquoise;
+          font-family: 'Fredoka One', cursive;
+        }
+        .uk-countdown-separator {
+          @extend %title_h1;
+          font-size: 4rem;
+          font-family: 'Fredoka One', cursive;
+          padding: 0 0.5rem;
+        }
+      }
+
       p {
         padding-top: 1rem;
         @extend %texte;

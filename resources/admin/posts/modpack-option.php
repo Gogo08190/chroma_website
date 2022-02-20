@@ -31,6 +31,7 @@ PostType::make('modpack', 'Modpacks', 'Modpack')
     Field::text('btn', ['label' => 'Bouton']),
     Field::text('plus', ['label' => 'Plus']),
     Field::media('logo', ['label' => 'Logo']),
+    Field::text('cd', ['label' => 'Countdown']),
   ]))
 
   ->add(new Section('iles', 'Islands', [

@@ -20,6 +20,17 @@
 							@endforeach
 						</div>
 						<p>{!! $modpacks['desc'] !!}</p>
+						@if($modpacks['cd'])
+						<div class="countdown" data-uk-countdown="date: {{ $modpacks['cd'] }}">
+						    <span class="uk-countdown-number uk-countdown-days"></span>
+						    <span class="uk-countdown-separator">:</span>
+						    <span class="uk-countdown-number uk-countdown-hours"></span>
+						    <span class="uk-countdown-separator">:</span>
+						    <span class="uk-countdown-number uk-countdown-minutes"></span>
+						    <span class="uk-countdown-separator">:</span>
+						    <span class="uk-countdown-number uk-countdown-seconds"></span>
+						</div>
+						@endif
 						<div class="button">
 							<a class="uk-button uk-button-default" target="_blank" href="{{$modpacks['url']}}">{{ $modpacks['btn'] }} <i class="fas fa-chevron-right"></i></a>
 						</div>
